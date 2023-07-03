@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Fintech</title>
+</head>
+<body>
+    <aside class="menu">
+        <img src="../images/logo.png" alt="">
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                    <i class="ph ph-house"></i>
+                    Dashboard
+                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="ph ph-currency-circle-dollar"></i>
+                    Investimento
+                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button" role="tab" aria-controls="v-pills-disabled" aria-selected="false">
+                    <i class="ph ph-target"></i>
+                    Objetivos
+                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                    <i class="ph ph-gear"></i>
+                    Configurações
+                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="ph ph-question"></i>
+                    Suporte
+                </button>
+                <a href="../pages/login.html">
+                    <button class="logout" type="button">
+                        <i class="ph ph-sign-out"></i>
+                        <span>Sair</span>
+                    </button>
+                </a>
+            </div> 
+        </div>
+    </aside>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="ph-bold ph-plus"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Despesa <i class="ph ph-minus icon-title red"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Receita <i class="ph-bold ph-plus icon-title blue"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Transferência <i class="ph ph-arrows-left-right icon-title yellow"></i></a></li>
+                </ul>
+            </div>
+            <div class="botoes-navbar">
+                <div class="botao-navbar">
+                    <button class="btn btn-secondary btn-theme">
+                        <i class="ph ph-moon"></i>
+                    </button>
+                </div>
+                <div class="botao-navbar2">
+                    <button class="btn btn-secondary btn-theme">
+                        <i class="ph ph-bell"></i>
+                    </button>
+                </div>
+                <div class="profile">
+                    <p>Bruna Lima</p>
+                    <i class="ph ph-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="init">
+            <h2>Olá, Bruna!</h2>
+            <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                <option value="1">Janeiro</option>
+                <option value="2">Fevereiro</option>
+                <option value="3">Março</option>
+                <option value="4">Abril</option>
+                <option value="5">Maio</option>
+                <option selected value="6">Junho</option>
+            </select>
+        </div>
+        <div class="content">
+            <div class="economia">
+                <h3>Economia Mensal</h3>
+                <div class="graphic">
+                    <img  src="../images/graphic.png" alt="Gráfico Economia Mensal">
+                </div>
+                <p class="blue economia-items"><strong>R$ 510,70</strong></p>
+                <p class="white-alpha economia-items">Valor Economizado</p>
+                <div class="economia-infos">
+                    <p>Receitas Consideradas</p>
+                    <p class="blue"><strong>R$ 1.207,47</strong></p>
+                    <p>Despesas Consideradas</p>
+                    <p class="red"><strong>R$ 696,77</strong></p>
+                </div>
+                <div class="economia-icon-text">
+                    <i class="ph-fill ph-star"></i>
+                    <p>Você está indo bem!</p>
+                </div>
+            </div>
+            <div class="receitas">
+                <h3>Receitas <i class="ph-bold ph-plus icon-title blue"></i></h3>
+                <div class="card-content">
+                    <div class="card-item">
+                        <p class="total">Total</p>
+                        <p class="valor-total">R$ 1.207,47</p>
+                    </div>
+                    <div class="card-item">
+                        <p class="previsto white-alpha">Previsto</p>
+                        <p class="valor-previsto white-alpha">R$ 2.790,94</p>
+                    </div>
+                </div>
+            </div>
+            <div class="despesas">
+                <h3>Despesas <i class="ph ph-minus icon-title red"></i></h3>
+                <div class="card-content">
+                    <div class="card-item">
+                        <p class="total">Total</p>
+                        <p class="valor-total">R$ 696,77</p>   
+                    </div>
+                    <div class="card-item">
+                        <p class="previsto white-alpha">Previsto</p>
+                        <p class="valor-previsto white-alpha">R$ 696,77</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contas">
+                <h3>Contas</h3>
+                <div class="contas-content">
+                    <!-- Itaú -->
+                    <div class="itau contas-item">
+                        <div class="contas-icon">
+                            <img src="../images/icon-itau.png" alt="logo banco Itaú">
+                        </div>
+                        <div class="contas-text">
+                            <div class="content-text">
+                                <p>Itaú</p>
+                                <p>R$ 7.239,15</p>
+                            </div>
+                            <div class="content-text">
+                                <p class="white-alpha font-sm">Previsto</p>
+                                <p class="white-alpha font-sm">R$ 9.239,15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nubank -->
+                    <div class="nubank contas-item">
+                        <div class="contas-icon">
+                            <img src="../images/icon-nubank.png" alt="logo banco Nubank">
+                        </div>
+                        <div class="contas-text">
+                            <div class="content-text">
+                                <p>Nubank</p>
+                                <p>R$ 7.239,15</p>
+                            </div>
+                            <div class="content-text">
+                                <p class="white-alpha font-sm">Previsto</p>
+                                <p class="white-alpha font-sm">R$ 9.239,15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carteira -->
+                    <div class="carteira contas-item">
+                        <div class="contas-icon">
+                            <img src="../images/icon-carteira.png" alt="logo banco Itaú">
+                        </div>
+                        <div class="contas-text">
+                            <div class="content-text">
+                                <p>Carteira</p>
+                                <p>R$ 7.239,15</p>
+                            </div>
+                            <div class="content-text">
+                                <p class="white-alpha font-sm">Previsto</p>
+                                <p class="white-alpha font-sm">R$ 9.239,15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Total -->
+                    <div class="total contas-item">
+                        <div class="contas-icon">
+                            <img src="../images/icon-total.png" alt="logo banco Nubank">
+                        </div>
+                        <div class="contas-text">
+                            <div class="content-text">
+                                <p>Total</p>
+                                <p>R$ 7.239,15</p>
+                            </div>
+                            <div class="content-text">
+                                <p class="white-alpha font-sm">Previsto</p>
+                                <p class="white-alpha font-sm">R$ 9.239,15</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pendencias">
+                <div class="pendencias-items">
+                    <img class="icon-itau" src="../images/icon-itau.png" alt="">
+                    <p>Você tem uma <strong>receita pendente</strong> no total de R$ 2.000,00</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Fintech</title>
+</head>
+<body>
+    <form action="../pages/index.html" method="get" autocomplete="off">
+        <div class="box">
+            <div class="container">
+                <img src="../images/logo.png" alt="Logo SmartMoney">
+                <p>Faça login e comece a usar</p>
+            </div>
+            <div class="container">
+                <div>
+                    <p for="e-mail" class="label">Endereço de e-mail</p>
+                    <i class="ph ph-envelope"></i>
+                    <input type="email" placeholder="Digite seu e-mail" id="e-mail" required autofocus>
+                </div>
+                <div>
+                    <p for="senha" class="label">Sua senha</p>
+                    <i class="ph ph-lock"></i>
+                    <input type="password" placeholder="*******" id="senha" required>
+                </div>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox"></label>
+                <p>Lembrar de mim por 30 dias</p>
+            </div>
+            <div class="container">
+                <p>
+                    <input class="btn" type="submit" value="Entrar">
+                </p>
+            </div>
+            <div class="container">
+                <a href="">Esqueceu sua senha?</a>
+                <a href="">Não possui conta? Crie uma agora</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
