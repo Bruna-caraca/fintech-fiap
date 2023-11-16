@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/cadastroDespesa.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Fintech</title>
+</head>
+
+<body>
+    <aside class="menu">
+        <img src="../images/logo.png" alt="">
+        <div class="d-flex align-items-start">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                    aria-selected="true">
+                    <i class="ph ph-house"></i>
+                    Dashboard
+                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
+                    role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                    <i class="ph ph-currency-circle-dollar"></i>
+                    Investimento
+                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-disabled" type="button"
+                    role="tab" aria-controls="v-pills-disabled" aria-selected="false">
+                    <i class="ph ph-target"></i>
+                    Objetivos
+                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button"
+                    role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                    <i class="ph ph-gear"></i>
+                    Configurações
+                </button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button"
+                    role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                    <i class="ph ph-question"></i>
+                    Suporte
+                </button>
+                <a href="../pages/login.html">
+                    <button class="logout" type="button">
+                        <i class="ph ph-sign-out"></i>
+                        <span>Sair</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </aside>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="ph-bold ph-plus"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Despesa <i class="ph ph-minus icon-title red"></i></a></li>
+                    <li><a class="dropdown-item" href="#">Receita <i class="ph-bold ph-plus icon-title blue"></i></a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Transferência
+                            <i class="ph ph-arrows-left-right icon-title yellow"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="botoes-navbar">
+                <div class="botao-navbar">
+                    <button class="btn btn-secondary btn-theme">
+                        <i class="ph ph-moon"></i>
+                    </button>
+                </div>
+                <div class="botao-navbar2">
+                    <button class="btn btn-secondary btn-theme">
+                        <i class="ph ph-bell"></i>
+                    </button>
+                </div>
+                <div class="profile">
+                    <p>Bruna Lima</p>
+                    <i class="ph ph-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="init">
+            <h2>Adicionar Despesa</h2>
+            <div>
+                <button class="btn-back">Voltar</button>
+                <button class="btn-save">Salvar</button>
+            </div>
+        </div>
+        <div class="form">
+            <form action="" method="get" autocomplete="off">
+                <!-- Coluna 1 -->
+                <div class="col">
+                    <div class="input-item">
+                        <i class="ph ph-text-align-left"></i>
+                        <input type="text" name="" id="" placeholder="Descrição">
+                    </div>
+                    <div class="input-item">
+                        <i class="ph ph-currency-circle-dollar"></i>
+                        <input type="number" name="" id="" placeholder="R$ 0,00">
+                    </div>
+                    <div class="input-item">
+                        <div class="col d-flex">
+                            <i class="ph ph-check-circle"></i>
+                            <p>Efetivada</p>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <!-- Coluna 2 -->
+                <div class="col">
+                    <div class="input-item">
+                        <div class="d-flex">
+                            <i class="ph ph-calendar-blank"></i>
+                            <p>Data de Vencimento</p>
+                        </div>
+                    </div>
+                    <div class="input-item">
+                        <div class="d-flex">
+                            <i class="ph ph-calendar"></i>
+                            <p>Data de Lançamento</p>
+                        </div>
+                    </div>
+                    <p class="label-categoria">Categoria</p>
+                    <div class="input-item">
+                        <div class="circle">
+                            <i class="ph-fill ph-shapes"></i>
+                        </div>
+                        <select class="form-select" id="categorySelect" aria-label="Default select example">
+                            <option selected>Outros</option>
+                            <option value="1">Alimentação</option>
+                            <option value="2">Transporte</option>
+                            <option value="3">Educação</option>
+                            <option value="4">Moradia</option>
+                            <option value="5">Saúde</option>
+                            <option value="6">Serviços</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
