@@ -95,8 +95,10 @@
         <div class="init">
             <h2>Adicionar Despesa</h2>
             <div>
-                <button class="btn-back">Voltar</button>
-                <button class="btn-save">Salvar</button>
+                <button class="btn-back">
+                    <a href="index.html">Voltar</a>
+                </button>
+                <button type="submit" form="formDespesa" class="btn-save">Salvar</button>
             </div>
         </div>
         <div class="form">
@@ -151,13 +153,13 @@
                             <i class="ph-fill ph-shapes"></i>
                         </div>
                         <select class="form-select" id="categorySelect" aria-label="Default select example">
-                            <option selected>Outros</option>
-                            <option value="1">Alimentação</option>
-                            <option value="2">Transporte</option>
-                            <option value="3">Educação</option>
-                            <option value="4">Moradia</option>
-                            <option value="5">Saúde</option>
-                            <option value="6">Serviços</option>
+                            <option value="Alimentação">Alimentação</option>
+                            <option value="Transporte">Transporte</option>
+                            <option value="Educação">Educação</option>
+                            <option value="Moradia">Moradia</option>
+                            <option value="Saúde">Saúde</option>
+                            <option value="Serviços">Serviços</option>
+                            <option selected value="Outros">Outros</option>
                         </select>
                     </div>
                 </div>

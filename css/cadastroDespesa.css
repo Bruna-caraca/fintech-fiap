@@ -20,9 +20,12 @@
     border: none;
     border-radius: 12px;
     padding: 8px 40px;
-    color: var(--color-white);
     font-weight: 600;
     margin-right: 16px;
+}
+
+.btn-back a {
+    color: var(--color-white);
 }
 
 .form {
@@ -48,6 +51,16 @@ input {
 
 input:focus {
     outline: none !important;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
 }
 
 .input-item {
