@@ -64,7 +64,7 @@ input:focus {
     font-size: 0.9rem;
 }
 
-.ph-envelope, .ph-lock {
+.ph-envelope, .ph-lock, .ph-user, .ph-phone, .ph-identification-card, .ph-calendar {
     position: relative;
     color: var(--color-gray40);
     font-size: 25px;

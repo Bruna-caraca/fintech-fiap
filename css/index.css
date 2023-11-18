@@ -203,6 +203,10 @@ a {
     grid-area: despesas;
 }
 
+.despesas a {
+    color: var(--color-white);
+}
+
 .contas {
     grid-area: contas;
 }
