@@ -132,7 +132,15 @@ a {
     color: var(--color-white);
 }
 
+.nav-link a {
+    color: var(--color-white);
+}
+
 .nav-link:hover {
+    color: var(--color-blue);
+}
+
+.nav-link a:hover {
     color: var(--color-blue);
 }
 

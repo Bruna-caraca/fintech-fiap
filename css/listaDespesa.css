@@ -17,6 +17,15 @@
     margin-left: 12px;
 }
 
+.close-button {
+    border: none;
+    background-color: var(--color-gray40);
+    color: var(--color-white);
+    border-radius: 12px;
+    padding: 12px;
+    margin-left: 12px;
+}
+
 .despesa {
     background-color: var(--color-gray);
     border-radius: 12px;
@@ -38,4 +47,16 @@
 
 .btn-back a {
     color: var(--color-white);
+}
+
+.modal-content {
+    background-color: var(--color-gray);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
 }
